@@ -13,7 +13,7 @@
 	--dark: #000040;
 	--dark-blue: #000070;
 	--light: #f8f8f8;
-	--light-green: #efffe3;
+	--light-purple: #fbf1ff;
 	--grey: #dadada;
 	--dark-grey: #1e1d2b;
 }
@@ -369,11 +369,11 @@ main .content-values .card .card-content.even:hover {
 }
 
 main .content-values .card .card-content.even {
-	background: var(--light-green);
+	background: var(--light-purple);
 }
 
 main .content-values .card .card-content.odd:hover {
-	background: var(--light-green);
+	background: var(--light-purple);
 	transform: scale(1.01);
 }
 /*---*/
@@ -390,7 +390,7 @@ main .certifications .content-certification,
 main .projects .content-project,
 main .services .content-service {
 	margin-top: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 20px;
@@ -413,13 +413,13 @@ main .content-objectives .card .card-content .content-image i {
 main .content-certification .card .card-content.odd,
 main .content-project .card .card-content.even,
 main .content-service .card .card-content.odd {
-	background: var(--light-green);
+	background: var(--light-purple);
 }
 
 main .content-certification .card .card-content.even:hover,
 main .content-project .card .card-content.odd:hover,
 main .content-service .card .card-content.even:hover {
-	background: var(--light-green);
+	background: var(--light-purple);
 	transform: scale(1.01);
 }
 
@@ -438,6 +438,7 @@ main .content-service .card .card-content.odd:hover {
 
 main .card .card-content .content-image {
 	text-align: center;
+	padding: 5px;
 }
 
 main .card .card-content .content-image img {
@@ -451,6 +452,7 @@ main .card .card-content h2 {
 }
 
 main .card .card-content p {
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -492,16 +494,24 @@ main .services .content-service .card .card-content button:hover  {
 main .card .card-content .button {
 	display: flex;
 	justify-content: end;
+	padding: 10px;
 }
 
 main .card .card-content .buttons {
 	display: flex;
 	justify-content: center;
 	gap: 15px;
+	padding: 10px;
+}
+
+main .projects .content-project .card .card-content h1,
+main .services .content-service .card .card-content h1 {
+	padding: 5px;
+	font-size: 20px;
 }
 
 main .services .content-service .card .card-content ul {
-	padding: 40px;
+	padding: 30px;
 	text-align: left;
 	font-size: 17px;
 }
@@ -510,26 +520,6 @@ main .services .content-service .card .card-content ul .circle-element {
 	list-style: circle;
 }
 /*---*/
-
-/*main .breadcrumbs {
-	display: flex;
-	grid-gap: 6px;
-}
-
-main .breadcrumbs li,
-main .breadcrumbs li a {
-	font-size: 14px;
-}
-
-main .breadcrumbs li a {
-	color: var(--blue);
-}
-
-main .breadcrumbs li a.active,
-main .breadcrumbs li.divider {
-	color: var(--dark-grey);
-	pointer-events: none;
-}*/
 
 @media screen and (max-width: 768px) {
 	#content {
