@@ -16,10 +16,6 @@
 	--light-green: #efffe3;
 	--grey: #dadada;
 	--dark-grey: #1e1d2b;
-	/*--green: #81D43A;*/
-	/*--blue: #fff;*/
-	/*--light-blue: #000000;*/
-	/*--red: #FC3B56;*/
 }
 
 html {
@@ -37,33 +33,6 @@ a {
 
 li {
 	list-style: none;
-}
-
-ul {
-	padding: 40px;
-	text-align: left;
-	font-size: 17px;
-}
-
-.circle-element {
-	list-style: circle;
-}
-
-button {
-	background-color: var(--dark);
-    color: var(--light);
-    border: none;
-    padding: 10px 5px;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
-button:hover {
-	opacity: 0.9;
 }
 
 main .title {
@@ -321,18 +290,6 @@ main .content-about .content-image {
 main .content-about .content-image img {
 	width: 100%;
 }
-
-main .about .content-objectives {
-	margin-top: 15px;
-	margin-bottom: 10px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 20px;
-}
-
-main .content-objectives .card .card-content .content-image i {
-	color: green;
-}
 /* --- */
 
 /* MISSION & VISION */
@@ -428,6 +385,7 @@ main .services {
 	margin-top: 15px;
 }
 
+main .about .content-objectives,
 main .certifications .content-certification,
 main .projects .content-project,
 main .services .content-service {
@@ -446,6 +404,10 @@ main .content-service .card .card-content {
 	border-radius: 5px;
 	box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
 	cursor: pointer;
+}
+
+main .content-objectives .card .card-content .content-image i {
+	color: green;
 }
 
 main .content-certification .card .card-content.odd,
@@ -506,6 +468,27 @@ main .card .card-content {
 	color: var(--dark);
 }
 
+main .certifications .content-certification .card .card-content button,
+main .projects .content-project .card .card-content button,
+main .services .content-service .card .card-content button {
+	background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+main .certifications .content-certification .card .card-content button:hover,
+main .projects .content-project .card .card-content button:hover,
+main .services .content-service .card .card-content button:hover  {
+	opacity: 0.9;
+}
+
 main .card .card-content .button {
 	display: flex;
 	justify-content: end;
@@ -516,9 +499,19 @@ main .card .card-content .buttons {
 	justify-content: center;
 	gap: 15px;
 }
+
+main .services .content-service .card .card-content ul {
+	padding: 40px;
+	text-align: left;
+	font-size: 17px;
+}
+
+main .services .content-service .card .card-content ul .circle-element {
+	list-style: circle;
+}
 /*---*/
 
-main .breadcrumbs {
+/*main .breadcrumbs {
 	display: flex;
 	grid-gap: 6px;
 }
@@ -536,7 +529,7 @@ main .breadcrumbs li a.active,
 main .breadcrumbs li.divider {
 	color: var(--dark-grey);
 	pointer-events: none;
-}
+}*/
 
 @media screen and (max-width: 768px) {
 	#content {
