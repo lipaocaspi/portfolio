@@ -13,7 +13,7 @@
 	--dark: #000040;
 	--dark-blue: #000070;
 	--light: #f8f8f8;
-	--light-purple: #fbf1ff;
+	--light-purple: #faeeff;
 	--grey: #dadada;
 	--dark-grey: #1e1d2b;
 }
@@ -294,16 +294,17 @@ main .content-about .content-image img {
 
 /* MISSION & VISION */
 main .mission-vision {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 20px;
-	margin-top: 10px;
+	margin: 25px;
 	flex-wrap: wrap;
 }
 
 main .mission .content-mission,
 main .vision .content-vision {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 20px;
 	padding: 20px;
 	background: var(--light);
@@ -315,6 +316,19 @@ main .vision .content-vision {
 main .mission .content-mission:hover,
 main .vision .content-vision:hover {
 	transform: scale(1.01);
+	background: var(--light-purple);
+}
+
+main .mission .content-mission .content-image,
+main .vision .content-vision .content-image {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+main .mission .content-mission .content-image img,
+main .vision .content-vision .content-image img {
+	width: 60%;
 }
 
 main .content-mission .content-desc,
@@ -339,6 +353,7 @@ main .content-vision .content-desc p {
 main .values {
 	display: flex;
 	flex-grow: 1;
+	padding: 5px;
 }
 
 main .values .content-values {
